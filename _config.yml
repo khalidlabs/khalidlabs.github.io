@@ -21,7 +21,7 @@ plugins:             [jekyll-paginate, jekyll-sitemap, jekyll-feed, jekyll-seo-t
 baseurl: "KhalidLabs"
 
 # Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
-title:		           Khalid Labs
+title:		           مدونتي العربية
 description:	       
 author:              Khalid
 
