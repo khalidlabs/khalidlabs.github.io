@@ -17,6 +17,12 @@
   Base
 */
 
+html {
+  direction: rtl;
+  font-size: 100%;
+  height: 100%;
+}
+
 body {
   font-family: "PT Serif", Georgia, "Times New Roman", serif;
   font-size: 18px;
