@@ -1,21 +1,19 @@
-/*
-  Contents:
-    Base
-    Site container
-    Masthead
-    Thumbnail
-    Post
-    Pagination
-    Footer
-    Menu
-    Code
-    Tables
-    Social media icons
-*/
+    
+---
+---
 
-/*
-  Base
-*/
+//
+// IMPORTS
+//
+
+@import "reset";
+@import "variables";
+@import "fonts";
+// Syntax highlighting @import is at the bottom of this file
+
+/**************/
+/* BASE RULES */
+/**************/
 
 html {
   direction: rtl;
@@ -24,490 +22,305 @@ html {
 }
 
 body {
-  font-family: "PT Serif", Georgia, "Times New Roman", serif;
-  font-size: 18px;
-  color: #515151;
-  line-height: 1.75rem;
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+  background: $white;
+  font: 19px/1.4 $base-font-family;
+  line-height: 1.6;
+  color: $darkGray;
 }
-
-@media (max-width: 30em) {
-  body {
-    font-size: 14px;
-    line-height: 1.5rem;
-  }
-  body h1 {
-    font-size: 1.5rem;
-  }
-}
-
-h1{
-  font-size: 2rem;
-}
-
-h1 a {
-  text-decoration: none;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Quattrocento Sans", sans-serif;
-  color: #333;
-}
-
-a {
-  text-decoration: underline;
-  color: #333;
-}
-
-a:hover {
-  color: black;
-  border-bottom: none;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 5px;
-}
-
-blockquote {
-  margin: 10px 20px 10px;
-  padding: 0px 15px;
-  border-left: 0.25em solid #ccc;
-  color: #999;
-  line-height: 1.5;
-}
-
-hr {
-  border-top: 1px solid #ccc;
-}
-
-/*
-  Site container
-*/
 
 .container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 615px;
-}
-
-/*48em*/
-
-@media (max-width: 768px) {
-  .container {
-    width: 90vw;
-  }
-}
-
-/*
-  Masthead
-*/
-
-.masthead {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  margin-bottom: 4rem;
-  font-family: "Quattrocento Sans", sans-serif;
-}
-
-.masthead a:hover {
-  color:black;
-}
-
-.masthead-title a {
-  font-size: 2rem;
-  text-decoration: none;
-  color: #505050;
-}
-
-.masthead-subtitle {
-  color: #999;
-}
-
-/*
-  Thumbnail
-*/
-
-.thumbnail-container {
-  max-width: 100%;
-  overflow: hidden;
-  border-radius: 5px;
-  margin-bottom: 25px;
-}
-
-.thumbnail-container img{
-  margin-top: -11.5%;
-  margin-bottom: -11.5%;
-}
-
-/*
-  Post
-*/
-
-.post-container {
-  margin-bottom: 4rem;
-}
-
-.posts {
-  margin-bottom: 5rem;
-  padding: 0px;
-  list-style: none;
-}
-
-.post-date {
-  display: block;
-  margin-top:3px;
-  margin-bottom: 1rem;
-  color: #9a9a9a;
-  font-family: 'Quattrocento Sans', sans-serif;
-  font-size:0.8rem;
-}
-
-@media (max-width: 30rem) {
-  .posts h1 {
-    font-size: 1.5rem;
-  }
-}
-
-.related {
-  padding-bottom: 2rem;
-}
-
-.related-posts {
-  padding-left: 0px;
-  list-style: none;
-}
-
-.related-posts a {
-  text-decoration: none;
-}
-
-/*
-  Pagination
-*/
-
-.pagination {
-  overflow: hidden;
-  font-family: 'Quattrocento Sans', sans-serif;
-  text-align: center;
-}
-
-.pagination a {
-  text-decoration: none;
-}
-
-.pagination-button {
-  color: #999;
-  border: 1px solid #e0e0e0;
-  padding: 15px 45px;
-  display: inline-block;
-  font-size: 16px;
-  font-weight: bold;
-}
-
-.pagination-active {
-  color: black;
-}
-
-.pagination-active:hover {
-  background-color: #e0e0e0;
-}
-
-/*
-  Footer
-*/
-
-.footer {
-  color: #999;
-  text-align: center;
-  margin: 2rem;
-}
-
-.footer a {
-  color: #999;
-  padding: 10px;
-  text-decoration: none;
-}
-
-.footer a:hover {
-  color: #333;
-}
-
-/*
-  Menu
-*/
-
-.menu {
-  padding-top: 0.5rem;
-  display: block;
-}
-
-.menu-content {
-  float: left;
-}
-
-.menu-content a {
-  color: #999;
-  font-size: 1rem;
-  padding-right: 10px;
-}
-
-.social-icons {
-  float: right;
-}
-
-.social-icons a {
-  color: #999;
-  font-size: 1rem;
-}
-
-@media (max-width: 30em) {
-  .social-icons {
-    float: left;
-    padding-top: 0px;
-  }
-  .menu-content {
-    margin-bottom: 5px;
-  }
-}
-
-/*
-  Code
-*/
-
-code,
-pre {
-  font-family: "Source Code Pro", monospace;
-}
-code {
-  padding: .25em .5em;
-  font-size: .8rem;
-  background-color: #f5f5f5;
-  border-radius: 3px;
-}
-pre {
-  display: block;
-  margin-top: 0;
-  margin-bottom: 1rem;
-  padding: 1rem;
-  font-size: .8rem;
-  line-height: 1.4;
-  white-space: pre;
-  white-space: pre-wrap;
-  word-break: break-all;
-  word-wrap: break-word;
-  background-color: #f5f5f5;
-}
-pre code {
-  padding: 0;
-  font-size: 100%;
-  color: inherit;
-  background-color: transparent;
-}
-
-/* Horizontal code overflow fix */
-pre.highlight {
-  white-space: pre;
-  overflow-x: auto;
-}
-
-/* Pygments via Jekyll */
-.highlight {
-  margin-bottom: 1rem;
-  border-radius: 4px;
-}
-.highlight pre {
-  margin-bottom: 0;
-}
-
-/* Gist via GitHub Pages */
-.gist .gist-file {
-  font-family: "Source Code Pro", monospace !important;
-}
-.gist .markdown-body {
-  padding: 15px;
-}
-.gist pre {
-  padding: 0;
-  background-color: transparent;
-}
-.gist .gist-file .gist-data {
-  font-size: .8rem !important;
-  line-height: 1.4;
-}
-.gist code {
-  padding: 0;
-  color: inherit;
-  background-color: transparent;
-  border-radius: 0;
-}
-
-/*
-  Tables
-*/
-
-table {
-  border-collapse: collapse;
-  margin-bottom: 30px;
+  margin: 0 auto;
+  max-width: 740px;
+  padding: 0 10px;
   width: 100%;
 }
 
-table, th, td {
-  border: 1px solid black;
+h1, h2, h3, h4, h5, h6 {
+  color: $darkerGray;
+  font-weight: bold;
+
+  line-height: 1.7;
+  margin: 1em 0 15px;
+  padding: 0;
+
+  @include mobile {
+    line-height: 1.4;
+  }
 }
 
-th, td {
-  padding: 15px;
+h1 {
+  font-size: 30px;
+  a {
+    color: inherit;
+  }
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 18px;
+  color: $gray;
+}
+
+p {
+  margin: 15px 0;
+}
+
+a {
+  color: $blue;
+  text-decoration: none;
+  cursor: pointer;
+  &:hover, &:active {
+    color: $blue;
+  }
+}
+
+ul, ol {
+  margin: 15px 0;
+  padding-right: 30px;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+ol {
+  list-style-type: arabic-indic;
+}
+
+ol ul, ul ol, ul ul, ol ol {
+  margin: 0;
+}
+
+ul ul, ol ul {
+  list-style-type: circle;
+}
+
+em, i {
+  font-style: italic;
+}
+
+strong, b {
+  font-weight: bold;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto 1em auto;
+}
+
+blockquote {
+  margin: 1.8em .8em;
+  border-right: 2px solid $gray;
+  padding: 0.1em 1em;
+  color: $gray;
+}
+
+// Fixes images in popup boxes from Google Translate
+.gmnoprint img {
+  max-width: none;
+}
+
+// Nicolas Gallagher's micro clearfix hack
+// http://nicolasgallagher.com/micro-clearfix-hack/
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/*********************/
+/* LAYOUT / SECTIONS */
+/*********************/
+
+//
+// .masthead
+//
+
+.wrapper-masthead {
+  margin-bottom: 50px;
+}
+
+.masthead {
+  padding: 20px 0;
+  border-bottom: 1px solid $lightGray;
+
+  @include mobile {
+    text-align: center;
+  }
+}
+
+.site-avatar {
+  float: right;
+  width: 70px;
+  height: 70px;
+  margin-left: 15px;
+
+  @include mobile {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+
+  img {
+    border-radius: 5px;
+  }
+}
+
+.site-info {
+  float: right;
+
+  @include mobile {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.site-name {
+  margin: 0;
+  color: $darkGray;
+  cursor: pointer;
+  font-weight: normal;
+  font-size: 28px;
+}
+
+.site-description {
+  margin: -5px 0 0 0;
+  color: $gray;
+  font-size: 16px;
+
+  @include mobile {
+    margin: 3px 0;
+  }
+}
+
+nav {
+  float: left;
+  margin-top: 23px; // @TODO: Vertically middle align
+  font-size: 18px;
+
+  @include mobile {
+    float: none;
+    margin-top: 9px;
+    display: block;
+    font-size: 16px;
+  }
+
+  a {
+    margin-right: 20px;
+    color: $darkGray;
+    text-align: left;
+    font-weight: normal;
+
+    @include mobile {
+      margin: 0 10px;
+      color: $blue;
+    }
+  }
+}
+
+.not-found {
+  img { width: 400px; }
+}
+
+//
+// .main
+//
+
+#main {
+  flex: 1;
+}
+
+.posts > .post {
+  padding-bottom: 2em;
+  border-bottom: 1px solid $lightGray;
+}
+
+.posts > .post:last-child {
+  padding-bottom: 1em;
+  border-bottom: none;
+}
+
+.post {
+  .comments {
+    margin-top: 10px;
+  }
+
+  .read-more {
+    font-size: 15px;
+  }
+}
+
+.footnotes {
+  border-top: 1px solid;
+}
+
+.footnote {
+  font-size: 70%;
+  vertical-align: top;
+}
+
+.reversefootnote {
+  display: inline-block;
+  vertical-align: sub;
+  transform: rotateY(180deg);
+}
+
+.date {
+  margin-top: 2em;
   text-align: left;
+  color: $gray;
 }
 
-/*
-  Social media icons
-*/
-
-.sharing-icons a {
-  padding-right: 10px;
+.wrapper-footer {
+  margin-top: 50px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  background-color: $lightGray;
 }
 
-.fa-envelope {
-  padding: 5px;
-	-o-transition:.5s;
-  	-ms-transition:.5s;
-  	-moz-transition:.5s;
-  	-webkit-transition:.5s;
-  	transition: .5s;
+footer {
+  padding: 20px 0;
+  text-align: center;
 }
 
-.fa-envelope:hover {
-	color: #f39c12;
+
+//
+// FOUT fonts
+//
+
+.naskh-font-loaded {
+  body { font-family: $body-font-family; }
 }
 
-.fa-twitter {
-  padding: 5px;
-	-o-transition:.5s;
-  	-ms-transition:.5s;
-  	-moz-transition:.5s;
-  	-webkit-transition:.5s;
-  	transition: .5s;
+.kufi-font-loaded {
+  h1, h2, h3, h4, h5, h6 { font-family: $heading-font-family; }
+  .site-name             { font-family: $heading-font-family; }
+  nav                    { font-family: $heading-font-family; }
+  .read-more             { font-family: $heading-font-family; }
+  .date                  { font-family: $heading-font-family; }
 }
 
-.fa-twitter:hover {
-	color: #00aced;
+.kawkab-font-loaded {
+  code { font-family: $code-font-family; }
 }
 
-.fa-instagram {
-  padding: 5px;
-	-o-transition:.5s;
-  	-ms-transition:.5s;
-  	-moz-transition:.5s;
-  	-webkit-transition:.5s;
-  	transition: .5s;
-}
-
-.fa-instagram:hover {
-	color: #375989;
-}
-
-.fa-github {
-  padding: 5px;
-	-o-transition:.5s;
-  	-ms-transition:.5s;
-  	-moz-transition:.5s;
-  	-webkit-transition:.5s;
-  	transition: .5s;
-}
-
-.fa-github:hover {
-	color: #343434;
-}
-
-.fa-linkedin {
-  padding: 5px;
-	-o-transition:.5s;
-  	-ms-transition:.5s;
-  	-moz-transition:.5s;
-  	-webkit-transition:.5s;
-  	transition: .5s;
-}
-
-.fa-linkedin:hover {
-	color: #0073a4;
-}
-
-.fa-facebook {
-  padding: 5px;
-	-o-transition:.5s;
-  	-ms-transition:.5s;
-  	-moz-transition:.5s;
-  	-webkit-transition:.5s;
-  	transition: .5s;
-}
-
-.fa-facebook:hover {
-	color: #3d5b99;
-}
-
-.fa-google-plus {
-  padding: 5px;
-	-o-transition:.5s;
-  	-ms-transition:.5s;
-  	-moz-transition:.5s;
-  	-webkit-transition:.5s;
-  	transition: .5s;
-}
-
-.fa-google-plus:hover {
-	color: #e64a41;
-}
-
-.fa-pinterest {
-  padding: 5px;
-	-o-transition:.5s;
-  	-ms-transition:.5s;
-  	-moz-transition:.5s;
-  	-webkit-transition:.5s;
-  	transition: .5s;
-}
-
-.fa-pinterest:hover {
-	color: #bd081c;
-}
-
-.fa-medium {
-  padding: 5px;
-	-o-transition:.5s;
-  	-ms-transition:.5s;
-  	-moz-transition:.5s;
-  	-webkit-transition:.5s;
-  	transition: .5s;
-}
-
-.fa-medium:hover {
-	color: #00AB6C;
-}
-
-.fa-codepen {
-  padding: 5px;
-	-o-transition:.5s;
-  	-ms-transition:.5s;
-  	-moz-transition:.5s;
-  	-webkit-transition:.5s;
-  	transition: .5s;
-}
-
-.fa-codepen:hover {
-	color: black;
-}
-
-.fa-rss-square {
-  padding: 5px;
-	-o-transition:.5s;
-  	-ms-transition:.5s;
-  	-moz-transition:.5s;
-  	-webkit-transition:.5s;
-  	transition: .5s;
-}
-
-.fa-rss-square:hover {
-	color: #ff6600;
-}
+// Settled on moving the import of syntax highlighting to the bottom of the CSS
+// ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
+@import "highlights";
+@import "svg-icons";
