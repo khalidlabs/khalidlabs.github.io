@@ -234,13 +234,12 @@ hr {
 */
 
 .menu {
+  font-family: 'Montserrat', sans-serif;
   padding-top: 0.5rem;
   display: block;
-  font-family: 'Montserrat', sans-serif;
 }
 
 .menu-content {
-  font-family: 'Montserrat', sans-serif;
   float: left;
 }
 
@@ -248,7 +247,6 @@ hr {
   color: #999;
   font-size: 1rem;
   padding-right: 10px;
-  font-family: 'Montserrat', sans-serif;
 }
 
 .social-icons {
