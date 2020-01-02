@@ -17,6 +17,11 @@
   Base
 */
 
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;
