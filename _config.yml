@@ -21,9 +21,9 @@ plugins:             [jekyll-paginate, jekyll-sitemap, jekyll-feed, jekyll-seo-t
 baseurl: "KhalidLabs"
 
 # Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
-title:		           Khalid Labs
+title: Khalid Labs
 description:	       
-author:              Khalid
+author: Khalid
 
 # RSS 2.0 can be used instead of Atom by uncommenting following two lines
 #feed:
