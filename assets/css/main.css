@@ -236,9 +236,11 @@ hr {
 .menu {
   padding-top: 0.5rem;
   display: block;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .menu-content {
+  font-family: 'Montserrat', sans-serif;
   float: left;
 }
 
