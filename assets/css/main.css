@@ -19,6 +19,7 @@
 
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Changa&display=swap');
 
 body {
   font-family: 'Montserrat', sans-serif;
@@ -235,7 +236,7 @@ hr {
 */
 
 .menu {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Changa', sans-serif;
   padding-top: 0.5rem;
   display: block;
 }
@@ -275,7 +276,7 @@ hr {
 
 code,
 pre {
-  font-family:  'Montserrat', sans-serif;
+  font-family: 'Changa', sans-serif;
 }
 code {
   padding: .25em .5em;
