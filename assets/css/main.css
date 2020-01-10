@@ -19,7 +19,7 @@
 
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Changa&display=swap');
+
 
 body {
   font-family: 'Montserrat', sans-serif;
@@ -47,7 +47,7 @@ h1 a {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Changa', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #333;
 }
 
@@ -105,7 +105,7 @@ hr {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   margin-bottom: 4rem;
-  font-family: 'Changa', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .masthead a:hover {
@@ -236,7 +236,7 @@ hr {
 */
 
 .menu {
-  font-family: 'Changa', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   padding-top: 0.5rem;
   display: block;
 }
@@ -276,7 +276,7 @@ hr {
 
 code,
 pre {
-  font-family: 'Changa', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 code {
   padding: .25em .5em;
