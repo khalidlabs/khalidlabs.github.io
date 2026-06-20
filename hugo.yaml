@@ -5,6 +5,9 @@ theme: ["PaperMod"]
 # Force rebuild - updated post front matter
 
 params:
+  author:
+    name: "Khalid Alhazmi"
+
   profileMode:
     enabled: true
     title: "Khalid Alhazmi"
