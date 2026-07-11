@@ -29,4 +29,4 @@ params:
     - name: email
       url: "mailto:khalid.alhazmi@example.com"
     - name: google-scholar  
-      url: "https://scholar.google.com/citations?user=TxoFaOIAAAAJ"
+      url: "https://scholar.google.com/citations?user=D_ANEfsAAAAJ&hl=en&oi=ao"

@@ -1,6 +1,6 @@
 ---
 title: "TEP Studio: Self-Describing Process Simulators"
-date: 2025-05-15T00:00:00Z
+date: 2026-05-15T00:00:00Z
 draft: false
 description: "A design principle — a simulator should publish one machine-readable process description that every interface is derived from — with a fast Tennessee Eastman reference implementation for people, algorithms, and reasoning models alike."
 tags: ["Simulation", "Reinforcement Learning", "MCP", "Process Control"]
