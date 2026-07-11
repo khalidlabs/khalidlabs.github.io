@@ -1,6 +1,6 @@
 ---
 title: "Large Reasoning Models for Abnormal Situation Management"
-date: 2025-06-05T00:00:00Z
+date: 2026-06-15T00:00:00Z
 draft: false
 description: "A general-purpose large reasoning model acting as a guarded supervisory layer that manages abnormal situations on an industrial plant through a bounded, programmatically verified action interface."
 tags: ["Large Reasoning Models", "Process Safety", "Autonomy", "Control Systems"]

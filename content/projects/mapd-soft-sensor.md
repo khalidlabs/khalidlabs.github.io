@@ -1,6 +1,6 @@
 ---
 title: "Reliability-Aware Inferential Measurement for MAPD Hydrogenation Control"
-date: 2025-06-20T00:00:00Z
+date: 2026-01-15T00:00:00Z
 draft: false
 description: "A soft sensor reframed as a reliability-aware measurement layer that decides when to trust the analyzer, when to rely on the model, and when to fall back — evaluated on a year of industrial reactor data."
 tags: ["Soft Sensors", "Uncertainty Quantification", "Process Control", "Machine Learning"]
@@ -22,7 +22,7 @@ the soft sensor is treated instead as part of a *reliability-aware measurement
 layer* that decides, at each step, whether to trust the analyzer, rely on the
 model, or route the controller to a conservative fallback.
 
-{{< figure src="/projects/mapd-architecture.png" align="center" alt="Three-stage inferential-measurement architecture: interval-valued soft sensor, analyzer validation and bias correction, then fusion or fallback." caption="The three-stage architecture: an interval-valued soft sensor, analyzer validation with bias correction, and a fusion-or-fallback stage that emits both a continuous measurement and a status flag identifying the active source." >}}
+{{< figure src="/projects/mapd-architecture.png" align="center" width="600" alt="Three-stage inferential-measurement architecture: interval-valued soft sensor, analyzer validation and bias correction, then fusion or fallback." caption="The three-stage architecture: an interval-valued soft sensor, analyzer validation with bias correction, and a fusion-or-fallback stage that emits both a continuous measurement and a status flag identifying the active source." >}}
 
 **Approach**
 
@@ -40,7 +40,7 @@ chronological holdout testing and GC-withholding windows that emulate extended
 analyzer outages. Among the models compared, the conformally calibrated TCN gave
 the best balance of accuracy and empirical coverage.
 
-{{< figure src="/projects/mapd-reactor-pfd.png" align="center" alt="Process flow diagram of the selective MAPD hydrogenation section, showing the hydrogen feed, lead/lag fixed-bed reactors, and analyzer locations." caption="The selective hydrogenation section: hydrogen is dosed into the depropanizer overhead feed ahead of lead/lag fixed-bed reactors, with analyzers on the reactor inlet and outlet." >}}
+{{< figure src="/projects/mapd-reactor-pfd.png" align="center" width="480" alt="Process flow diagram of the selective MAPD hydrogenation section, showing the hydrogen feed, lead/lag fixed-bed reactors, and analyzer locations." caption="The selective hydrogenation section: hydrogen is dosed into the depropanizer overhead feed ahead of lead/lag fixed-bed reactors, with analyzers on the reactor inlet and outlet." >}}
 
 The broader point is a reframing: soft sensing for analyzer-dependent control is
 a *deployment* problem in which prediction accuracy and online measurement
@@ -49,4 +49,4 @@ move a valve.
 
 ---
 
-*Manuscript submitted to the* Journal of Process Control *(2025).*
+*Manuscript submitted to the* Journal of Process Control *(2026).*
