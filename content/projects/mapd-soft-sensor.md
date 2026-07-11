@@ -1,6 +1,6 @@
 ---
 title: "Reliability-Aware Inferential Measurement for MAPD Hydrogenation Control"
-date: 2026-01-15T00:00:00Z
+date: 2026-01-07T00:00:00Z
 draft: false
 description: "A soft sensor reframed as a reliability-aware measurement layer that decides when to trust the analyzer, when to rely on the model, and when to fall back — evaluated on a year of industrial reactor data."
 tags: ["Soft Sensors", "Uncertainty Quantification", "Process Control", "Machine Learning"]
