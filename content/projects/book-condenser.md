@@ -1,6 +1,6 @@
 ---
 title: "Book Condenser"
-date: 2026-07-05T00:00:00Z
+date: 2026-03-10T00:00:00Z
 draft: false
 description: "A tool that produces a shortened reading edition of a nonfiction book by extracting the author's own prose — reading less of the book without replacing it with a summary."
 tags: ["LLM Applications", "Document Processing", "Open Source"]
