@@ -14,8 +14,6 @@ identifies and keeps the author's own passages — verbatim — that are needed 
 preserve the central question, thesis, key terms, argument, evidence, and
 conclusion.
 
-{{< figure src="/projects/book-condenser-pipeline.svg" align="center" alt="Book Condenser pipeline: parse the source, build an analytical map, select verbatim passages, control length and completeness, then render a reading edition." caption="The condensation pipeline. Selection is organized around the book's argument structure rather than chapter coverage, and any bridge inserted between non-contiguous passages is labelled as an editorial transition." >}}
-
 **What it does**
 
 - **Extractive, not generative.** Retained text is quotation-dominant and stays
